@@ -3,6 +3,8 @@ title: "Lab 06 - Regular Expressions and Web Scraping"
 output: 
   tufte::tufte_html:
     css: style.css
+  github_document: default
+link-citations: yes
 ---
 
 ```{r setup, echo=FALSE}
