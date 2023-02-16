@@ -1,8 +1,15 @@
 ---
 title: "Lab 06 - Regular Expressions and Web Scraping"
+date: "2023-02-15"
 output: 
-  tufte::tufte_html:
-    css: style.css
+  github_document: default
+knit: (function(input, ...) {
+    rmarkdown::render(
+      input,
+      output_file = "README.md",
+      envir = globalenv()
+    )
+  })
 ---
 
 ```{r setup, echo=FALSE}
@@ -50,11 +57,11 @@ stringr::str_extract(counts, "[0-9,]+")
 stringr::str_extract(counts, "[\\d,]+")
 ```
 
- - How many sars-cov-2 papers are there?
+ - How many sars-cov-2 papers are there? \\
+ 
  There are 192,677 sars-cov-2 papers.
  
 
-_Answer here._
 
 
 Don't forget to commit your work!
@@ -208,7 +215,7 @@ abstracts <- str_replace_all(abstracts, "\\s+", " ")
 table(is.na(abstracts))
 ```
 
-  - How many of these don't have an abstract? 
+  - How many of these don't have an abstract? \\
 There are 53 articles don't have an abstract.
 
 
@@ -220,7 +227,7 @@ titles <- str_remove_all(titles, "</?[[:alnum:]]+>")
 table(is.na(titles))
 ```
 
-- How many of these don't have a title ? 
+- How many of these don't have a title ?  \\
 There is zero article don't have a title.
 
 

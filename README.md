@@ -52,10 +52,9 @@ stringr::str_extract(counts, "[\\d,]+")
 
     ## [1] "192,687"
 
-- How many sars-cov-2 papers are there? There are 192,677 sars-cov-2
-  papers.
+- How many sars-cov-2 papers are there? \\
 
-*Answer here.*
+There are 192,677 sars-cov-2 papers.
 
 Don’t forget to commit your work!
 
@@ -1595,8 +1594,8 @@ table(is.na(abstracts))
     ## FALSE  TRUE 
     ##   285    53
 
-- How many of these don’t have an abstract? There are 53 articles don’t
-  have an abstract.
+- How many of these don’t have an abstract? \\ There are 53 articles
+  don’t have an abstract.
 
 Now, the title
 
@@ -1610,7 +1609,7 @@ table(is.na(titles))
     ## FALSE 
     ##   338
 
-- How many of these don’t have a title ? There is zero article don’t
+- How many of these don’t have a title ? \\ There is zero article don’t
   have a title.
 
 Finally, put everything together into a single `data.frame` and use
